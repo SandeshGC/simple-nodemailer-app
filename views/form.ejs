@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="icon" type="image/png" href="/public/favicon.ico" />
+  <title>Send Email</title>
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+      height: 2rem;
+      width: full;
+      padding: 0.2rem 0.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+
+      border-radius: 0.25rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 330px;
+      margin: auto;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 0.5rem;
+      padding: 3rem;
+      margin-top: 4rem;
+    }
+
+    textarea {
+      width: full;
+      padding: 0.2rem 0.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.25rem;
+    }
+
+    button {
+      padding: 0.75rem 0;
+      background-color: cadetblue;
+      border: none;
+      border-radius: 0.25rem;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.2ch;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: hover "red";
+    }
+  </style>
+</head>
+
+<body>
+  <main style="padding: 2rem">
+    <h2 style="text-align: center">Send message</h2>
+    <form method="post" action="/submit">
+      <input type="email" name="receiver" placeholder="Email address of receiver" required />
+      <input type="text" name="subject" id="subject" placeholder="Subject" required />
+
+      <textarea name="message" placeholder="Message" required rows="5" style="resize: none;"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+</body>
