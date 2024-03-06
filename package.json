@@ -1,5 +1,5 @@
 {
-  "name": "simple-nodemailer-project",
+  "name": "simple-nodemailer-app",
   "version": "1.0.0",
   "description": "Simple app to send email using nodemailer.",
   "main": "index.js",
