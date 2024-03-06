@@ -1,8 +1,8 @@
-# Simple Nodemailer Project
+# Simple Nodemailer App
 
 This project is a simple application that demonstrates an example of how you can use nodemailer to send email from your websites.
 
-The nodemailer has various applications:
+'nodemailer' has various applications:
 
 - Contact forms
 - Password reset forms
